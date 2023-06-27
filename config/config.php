@@ -24,7 +24,7 @@
   }
 
   //CONFIG VARIABLE
-  $indexUrl = "http://localhost/projektCos/";
+  $indexUrl = "http://localhost/Netflix-Clone/";
   $_SESSION["indexUrl"] = $indexUrl;
   $upload = "off";
   $comment = "on";
