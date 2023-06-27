@@ -1,0 +1,137 @@
+.trailerContainer {
+    width: 100%;
+    min-height: 500px;
+    height: calc(100vh - 150px);
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+.trailerAll {
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 2;
+    bottom: 80px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.trailerAll img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.trailerContainer img {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.trailerContainer iframe {
+    top: -30%;
+    height: 171%;
+    width: 100%;
+    position: absolute;
+}
+.trailerContainer .trailerInfo {
+    width: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    transition: 0.3s;
+}
+.trailerContainer .trailerOption {
+    display: flex;
+    margin: 20px 0px 0px 0px;
+}
+.trailerContainer .trailerInfo .trailerName {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.trailerContainer .trailerInfo .trailerCategory {
+    font-size: 22px;
+}
+.buttonTrailer i {
+    font-size: 26px;
+}
+.buttonTrailerPlay {
+    margin-right: 10px;
+}
+
+
+@media only screen and (min-width : 1750px) {
+    .trailerContainer iframe {
+        top: -30%;
+        height: 158%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width : 1750px) {
+    .trailerContainer iframe {
+        top: -38%;
+        height: 180%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1200px) {
+    #videoSelect {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+    #videoSelect {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width : 768px) {
+    .trailerContainer {
+        height: calc(100% - 112px);
+    }
+    #videoSelect {
+        display: none;
+    }
+    .trailerAll {
+        left: 40;
+        bottom: 40;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .trailerContainer {
+        height: calc(100% - 210px);
+    }
+    #videoSelect {
+        display: none;
+    }
+    .trailerAll {
+        width: 100%;
+        left: 0;
+        bottom: 35;
+        align-items: center;
+        padding: 0px 15px;
+    }
+    .trailerContainer .trailerInfo {
+        align-items: center;
+        text-align: center;
+    }
+    .trailerContainer .trailerInfo .trailerName {
+        font-size: 34px;
+    }
+    .trailerContainer .trailerInfo .trailerCategory {
+        font-size: 20px;
+    }
+    .trailerOption {
+        flex-direction: column;
+        width: 75%;
+    }
+    .buttonTrailerPlay {
+        margin: 0px 0px 10px 0px;
+    }
+}

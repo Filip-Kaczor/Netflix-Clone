@@ -1,0 +1,128 @@
+.swiperInteractivePanel {
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.swiperInteractivePanel .shadow {
+    background-image: linear-gradient(to right,rgba(18,18,18,1) 18%,rgba(0,0,0,0));
+}
+.swiperInteractivePanel .interactivePanelAll {
+    color: white;
+    padding: 10px;
+    margin: 0px 0px 0px 60px;
+    width: 55%;
+    z-index: 2;
+}
+.swiperInteractivePanel .interactivePanelAll .interactivePanelHeadline h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+.swiperInteractivePanel .interactivePanelAll .interactivePanelContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.swiperInteractivePanel .interactivePanelAll .interactivePanelContent .interactivePanelDescription {
+    margin-bottom: 20px;
+    color: rgb(153,153,153);
+}
+.swiperInteractivePanel .interactivePanelAll .interactivePanelContent .interactivePanelLink {
+    padding: 18px 32px;
+    font-weight: 600;
+    background-color: rgb(50, 50, 50, 0.7);
+    cursor: pointer;
+    color: #14FFEC;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.swiperInteractivePanel img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+}
+.interactivePanel {
+    padding: 50px 0px;
+}
+.swiper-pagination-bullet {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    margin: 0px 6px;
+}
+
+
+@media only screen and (min-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1200px) {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+
+}
+
+@media only screen and (min-width: 501px) and (max-width : 768px) {
+    .swiperInteractivePanel {
+        height: 600px;
+    }
+    .swiperInteractivePanel .interactivePanelAll {
+        bottom: 50px;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        position: absolute;
+        padding: 15px;
+    }
+    .interactivePanelHeadline {
+        text-align: center;
+    }
+    .swiperInteractivePanel .interactivePanelAll .interactivePanelContent {
+        align-items: center;
+    }
+    .swiperInteractivePanel .interactivePanelAll .interactivePanelContent .interactivePanelDescription {
+        text-align: center;
+    }
+    .swiperInteractivePanel .interactivePanelAll .interactivePanelContent .button1 {
+        background-color: rgba(50, 50, 50, 0.8);
+    }
+    .swiperInteractivePanel .shadow {
+        background-image: linear-gradient(to top,rgb(18,18,18,1) 10%,rgba(0,0,0,0));
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .swiperInteractivePanel .interactivePanelAll {
+        bottom: 50px;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        position: absolute;
+        padding: 15px;
+    }
+    .interactivePanelHeadline {
+        text-align: center;
+    }
+    .swiperInteractivePanel .interactivePanelAll .interactivePanelContent {
+        align-items: center;
+    }
+    .swiperInteractivePanel .interactivePanelAll .interactivePanelContent .interactivePanelDescription {
+        text-align: center;
+    }
+    .swiperInteractivePanel .interactivePanelAll .interactivePanelContent .button1 {
+        background-color: rgba(50, 50, 50, 0.8);
+    }
+    .swiperInteractivePanel .shadow {
+        background-image: linear-gradient(to top,rgb(18,18,18,1) 10%,rgba(0,0,0,0));
+    }
+}

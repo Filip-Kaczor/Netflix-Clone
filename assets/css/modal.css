@@ -1,0 +1,175 @@
+.modalFade {
+    overflow: hidden;
+    padding-right: 14px;
+    width: 100%;
+    box-sizing: content-box;
+}
+.modalOpen {
+    overflow-x: hidden;
+    background-color: rgb(18, 18, 18, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+}
+
+
+.modalAll {
+    margin: 2rem 5rem;
+    background-color: rgb(20,20,20);
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+}
+.modalClose {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: calc(100% - 40px);
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+}
+.modalCloseButton {
+    cursor: pointer;
+    font-size: 28px;
+    background-color: white;
+    color: black;
+    padding: 12px;
+    border-radius: 50px;
+    text-align: center;
+    width: 57.5px;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+.modalCloseButton:hover {
+    color: #FF512F;
+}
+#modalCloseMobile {
+    display: none;
+}
+#modalCloseDesktop {
+    display: block;
+}
+.modalTop {
+    height: 50px;
+    min-height: 450px;
+    position: relative;
+}
+.ModalBox {
+    position: absolute;
+    bottom: 12%;
+    left: 7%;
+    z-index: 3;
+    max-width: 86%;
+}
+.modalShadow {
+    background-image: linear-gradient(to top,rgba(20,20,20,1) 15%,rgba(0,0,0,0));
+}
+.modalInfo {
+    margin-bottom: 20px;
+}
+.modalTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.modalCategory {
+    font-size: 20px;
+    font-weight: 400;
+}
+.modalOptions {
+    display: flex;
+}
+.modalImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modalBot {
+    left: 7%;
+    max-width: 86%;
+    margin: auto;
+}
+.modalBot1 {
+    padding-bottom: 7%;
+}
+
+
+@media only screen and (min-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1200px) {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+
+}
+
+@media only screen and (min-width: 501px) and (max-width : 768px) {
+    .modalAll {
+        margin: 0px;
+        height: auto;
+        border-radius: 0;
+    }
+    .modalClose {
+        justify-content: flex-start;
+    }
+    #modalCloseMobile {
+        display: block;
+    }
+    #modalCloseDesktop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .modalAll {
+        margin: 0px;
+        height: auto;
+        border-radius: 0;
+    }
+    .modalClose {
+        justify-content: flex-start;
+    }
+    .ModalBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .modalOptions {
+        display: flex;
+        flex-direction: column;
+    }
+    .modalTitle {
+        margin-bottom: 10px;
+    }
+    .modalInfo {
+        text-align: center;
+    }
+    #modalCloseMobile {
+        display: block;
+    }
+    #modalCloseDesktop {
+        display: none;
+    }
+    .swiperNavHide {
+        display: none;
+    }
+    .marginTop {
+        margin-top: 10px;
+    }
+}

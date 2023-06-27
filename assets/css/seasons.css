@@ -1,0 +1,16 @@
+.allSeasonsContainer {
+    height: fit-content;
+}
+.seasonShow {
+    display: none;
+    height: fit-content;
+    -khtml-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+.seasonShowSwiper {
+    padding-top: 20px;
+}

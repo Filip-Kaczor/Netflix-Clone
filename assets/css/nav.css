@@ -1,0 +1,320 @@
+.activeLink {
+    color: white;
+}
+#leftNavLogoImg {
+    box-sizing: border-box;
+    font-size: 30px;
+    padding: 12px 0px;
+}
+#navContainerMenu {
+    transition: all .3s ease;
+}
+.navContainerMenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom,rgba(18,18,18, 0.7) 10%,rgba(0,0,0,0));
+}
+.NavPadding {
+    box-sizing: border-box;
+    padding: 10px 50px;
+}
+.NavDiv {
+    transition: all .3s ease;
+}
+.NavDiv ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.NavDiv ul li {
+    margin: 0px;
+}
+.leftNavLogo {
+    margin-right: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+}
+#loginIcon {
+    display: none;
+}
+#loginText {
+    display: block;
+}
+.navOptionIcon {
+    cursor: pointer;
+    margin: 0px 8px;
+    padding: 7px;
+    font-size: 24px;
+    transition: 0.3s;
+}
+.navOptionIcon:hover {
+    color: #FF512F;
+}
+.navOptionLogin {
+    color: #FF512F;
+    font-weight: 600;
+    border: 3px solid #FF512F;
+    border-radius: 50px;
+    padding: 7px 14px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+}
+.navOptionLogin:hover {
+    background-color: rgb(255, 81, 47, 0.1);
+}
+.navOptionProfileIcon {
+    height: 37px;
+    padding: 0px;
+    margin: 0px 8px;
+}
+.navOptionProfileIcon img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.navOptionText h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px 15px 0px 0px;
+}
+#navContainerCategory {
+    display: none;
+    width: 100%;
+    padding-top: 0px;
+    background-color: rgba(18,18,18, 0.95);
+    position: fixed;
+    z-index: 9;
+    top: 74px;
+    opacity: 0;
+    transition: all .8s ease;
+}
+.sliderNavCategory {
+    width: max-content;
+    padding: 8px 10px;
+    font-size: 20px;
+}
+.openRandomEntityContainer {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 10;
+}
+.openRandomLink {
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-size: 20px;
+    border-radius: 50px;
+    background: rgb(255,255,255,1);
+}
+.openRandomIcon {
+    font-size: 28px;
+    display: flex;
+    width: 60px;
+    color: #FF512F;
+    align-items: center;
+    justify-content: center;
+}
+.openRandomText {
+    font-weight: 700;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0px 15.75px 0px 15.75px;
+    transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -o-transition: all .8s ease;
+}
+
+@media only screen and (min-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1200px) {
+    .NavPadding {
+        padding: 10px 20px;
+    }
+    .openRandomEntityContainer {
+        right: 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+    .NavPadding {
+        padding: 10px 20px;
+    }
+    .openRandomEntityContainer {
+        right: 20px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width : 768px) {
+    #loginIcon {
+        display: block;
+    }
+    #loginText {
+        display: none;
+    }
+    #rightNavContainer ul {
+        width: 100%;
+        padding: 25px 120px;
+        margin: auto;
+    }
+    #rightNavContainer {
+        z-index: 10;
+        position: fixed;
+        bottom: 0px;
+        background-image: linear-gradient(to top,rgba(18,18,18, 0.7) 10%,rgba(0,0,0,0));
+        width: -webkit-fill-available;
+        left: 0px;
+        box-sizing: border-box;
+    }
+    #rightNavContainer ul {
+        bottom: 0px;
+        display: flex;
+        height: 85px;
+        width: 100%;
+        background-image: linear-gradient(to top,rgba(18,18,18,1) 0%,rgba(0,0,0,0.3));
+        box-sizing: border-box;
+        backdrop-filter: blur(6px);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+
+    #navContainerCategory {
+        display: block;
+    }
+    .NavPadding {
+        padding: 10px 15px;
+        justify-content: center;
+    }
+    .openRandomEntityContainer {
+        right: 15px;
+    }
+    .navOptionProfileIcon {
+        height: 40px;
+    }
+    .navOptionIcon {
+        font-size: 29px;
+        color: rgb(153,153,153);
+    }
+    .navOptionIcon:hover {
+        color: rgb(153,153,153);
+    }
+    .openRandomEntityContainer {
+        bottom: 100;
+    }
+    .openRandomLink {
+        height: 60px;
+    }
+    .openRandomIcon {
+        font-size: 26px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #loginIcon {
+        display: block;
+    }
+    #loginText {
+        display: none;
+    }
+    #rightNavContainer {
+        z-index: 10;
+        position: fixed;
+        bottom: 0;
+        background-image: linear-gradient(to top,rgba(18,18,18, 0.7) 10%,rgba(0,0,0,0));
+        width: -webkit-fill-available;
+        left: 0;
+        box-sizing: border-box;
+    }
+    #rightNavContainer ul {
+        bottom: 0;
+        display: flex;
+        height: 85px;
+        width: 100%;
+        background-image: linear-gradient(to top,rgba(18,18,18,1) 0%,rgba(0,0,0,0.3));
+        box-sizing: border-box;
+        backdrop-filter: blur(6px);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    .sliderNavCategory {
+        padding: 5px 0px;
+        font-size: 14px;
+    }
+    .leftNavLogo {
+        margin-right: 15px;
+    }
+    #navContainerCategory {
+        display: block;
+    }
+    .NavPadding {
+        padding: 10px 15px;
+        justify-content: center;
+    }
+    .openRandomEntityContainer {
+        right: 15px;
+        bottom: 100;
+    }
+    #botNavContainer {
+        display: block;
+    }
+    .navOptionProfileIcon {
+        height: 40px;
+    }
+    .navOptionIcon {
+        font-size: 28px;
+        margin: 0;
+        color: rgb(153,153,153);
+    }
+    .navOptionIcon:hover {
+        color: rgb(153,153,153);
+    }
+    #leftNavLogoImg {
+        font-size: 30px;
+        padding: 12px 0px;
+    }
+    .navOptionText h1 {
+        font-size: 22px;
+        margin: 0px 10px 0px 0px;
+    }
+    .openRandomLink {
+        height: 60px;
+    }
+    .openRandomIcon {
+        font-size: 26px;
+        width: 40px;
+    }
+    .navOptionPremium {
+        display: none;
+    }
+}

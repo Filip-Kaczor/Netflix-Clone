@@ -1,0 +1,77 @@
+#resultDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+#resultDiv .swiperSlide {
+    max-width: calc(100%/5);
+    padding: 5px;
+    box-sizing: border-box;
+}
+.loadingAjaxEndContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0px 0px;
+}
+.loadingAjaxEnd {
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 50px;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+}
+.loadingAjaxiIcon {
+    font-weight: 100;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.loadingAjaxText {
+    font-weight: 700;
+}
+
+@media only screen and (min-width : 1750px) {
+    #resultDiv .swiperSlide {
+        max-width: calc(100%/6);
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width : 1750px) {
+    #resultDiv .swiperSlide {
+        max-width: calc(100%/4);
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1200px) {
+    #resultDiv .swiperSlide {
+        max-width: calc(100%/4);
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+    #resultDiv .swiperSlide {
+        max-width: calc(100%/3);
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width : 768px) {
+    #resultDiv .swiperSlide {
+        max-width: calc(100%/2);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #resultDiv .swiperSlide {
+        max-width: 100%;
+        width: 100%;
+    }
+    .loadingAjaxEnd {
+        font-size: 18px;
+    }
+    .loadingAjaxiIcon {
+        font-size: 34px;
+    }
+}

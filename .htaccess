@@ -1,0 +1,77 @@
+RewriteEngine On    # Turn on the rewriting engine
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+#RewriteCond %{HTTPS} !=on 
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+RewriteRule ^sitemap.xml$ sitemap.php [QSA,L]
+
+RewriteRule ^video/(\d+)/([\w-]+)-(\d+)$ video.php?id=$1&title=$2&date=$3 [QSA,L]
+
+RewriteRule ^serial/(\d+)/([\w-]+)$ serial.php?id=$1&$2 [QSA,L]
+
+RewriteRule ^tag/(\d+)/([\w-]+)$ tag.php?id=$1&name=$2 [QSA,L]
+
+RewriteRule ^kategoria/(\d+)/([\w-]+)$ kategoria.php?id=$1&name=$2 [QSA,L]
+
+RewriteRule ^twoja-lista/([\w-]+)$ liked.php?username=$1 [QSA,L]
+
+RewriteRule ^/$ index.php [QSA,L]
+
+RewriteRule ^premium$ premium.php [QSA,L]
+
+RewriteRule ^premium-zakup$ premiumPay.php [QSA,L]
+
+RewriteRule ^payment$ paymentNotify.php [QSA,L]
+
+RewriteRule ^twoje-konto$ yourAccount.php [QSA,L]
+
+RewriteRule ^profil/(\d+)/([\w-]+)$ profil.php?id=$1&username=$2 [QSA,L]
+
+RewriteRule ^darmowe-filmy$ filmy.php?url=$1 [QSA,L]
+
+RewriteRule ^darmowe-seriale$ seriale.php?url=$1 [QSA,L]
+
+RewriteRule ^wszystkie-kategorie$ browse.php?url=$1 [QSA,L]
+
+RewriteRule ^nowe-popularne$ gainPopularity.php?url=$1 [QSA,L]
+
+RewriteRule ^nowe$ nowe.php?url=$1 [QSA,L]
+
+RewriteRule ^szukaj$ szukaj.php?url=$1 [QSA,L]
+
+RewriteRule ^regulamin$ regulamin.php [QSA,L]
+
+RewriteRule ^cookies$ pliki/cookies.php [QSA,L]
+
+RewriteRule ^regulamin-premium$ regulamin_premium.php [QSA,L]
+
+RewriteRule ^kontakt$ kontakt.php [QSA,L]
+
+RewriteRule ^rodo$ rodo.php [QSA,L]
+
+RewriteRule ^usun-konto/([\w-]+)$ usunkonto.php?username=$1 [QSA,L]
+
+RewriteRule ^prywatnosc$ polityka_prywatnosci.php [QSA,L]
+
+RewriteRule ^activate/(\d+)/([\w-]+)$ activate.php?id=$1&code=$2 [QSA,L]
+
+RewriteRule ^reset/(\d+)/([\w-]+)$ reset.php?id=$1&code=$2 [QSA,L]
+
+RewriteRule ^verify/([\w-]+)$ verify.php?username=$1 [QSA,L]
+
+#RewriteRule ^nowe-haslo/back=(.+)$ newPassword.php?url=$1 [QSA,L]
+
+#RewriteRule ^dodaj-film$ upload_film.php [QSA,L]
+
+#RewriteRule ^dodaj-serial$ upload_film.php [QSA,L]
+
+RewriteRule ^logout/back=(.+)$ logout.php?url=$1 [QSA,L]
+
+RewriteRule ^([\w-]+)/back=(.+)$ login.php?page=$1&url=$2 [QSA,L]
+

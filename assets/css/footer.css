@@ -1,0 +1,99 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: auto;
+    border-top: 1px solid rgb(153,153,153,0.2);
+    padding: 45px 0px 20px;
+    font-size: 18px;
+}
+.footerIndex {
+    font-weight: 700;
+    transition: 0.3s;
+}
+.footer1 {
+    color: #9e9e9e;
+}
+.footer2 {
+    color: #9e9e9e;
+}
+.footerOption {
+    color: #9e9e9e;
+    transition: 0.3s;
+}
+.footerOption:hover {
+    color: white;
+}
+
+@media only screen and (min-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1200px) {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+    .footer1 {
+        text-align: center;
+    }
+    .footer2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width : 768px) {
+    .footer {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer1 {
+        padding-bottom: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .footer2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerOption {
+        padding: 3px;
+    }
+    .cFooter {
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer1 {
+        padding-bottom: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .footer2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerOption {
+        padding: 3px;
+    }
+    .cFooter {
+        padding-bottom: 0px;
+    }
+}

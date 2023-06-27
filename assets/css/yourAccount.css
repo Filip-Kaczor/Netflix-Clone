@@ -1,0 +1,114 @@
+body {
+    color: black;
+    background: #f3f3f3;
+}
+#navContainerMenu {
+    background-color: rgba(18, 18, 18, 0.95)!important;
+}
+.profileContainer {
+    margin: 0px auto;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1024px;
+}
+.profileHeadline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.profileHeadlineRight {
+    justify-content: flex-end;
+}
+.profileHeadlineRight a .button1 {
+    background: black;
+}
+.pH1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.pH2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profileInfoContainer {
+    padding-bottom: 10px;
+}
+.profileHeadline2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.profileInfo {
+    padding: 20px;
+    border: 1px solid;
+}
+.profileInfoAll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.profileInfoAllPremium {
+    padding-bottom:0px;
+}
+.profileInfoAll1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.profileInfoHref {
+    color: #FF512F;
+    font-size: 18px;
+    font-weight: 600;
+}
+.profileInfoHref:hover {
+    text-decoration: underline;
+}
+.profileInfoPremium {
+    background: black;
+    color: white;
+    padding: 10px 10px 10px 30px;
+}
+
+@media only screen and (min-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1200px) {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+
+}
+
+@media only screen and (min-width: 501px) and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 500px) {
+    .profileHeadline {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .profileInfoAll {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profileInfoAllPremium {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .profileInfoAll2 {
+        padding: 10px 0px;
+    }
+}

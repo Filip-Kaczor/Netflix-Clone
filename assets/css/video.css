@@ -1,0 +1,242 @@
+.topVideoContainer {
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+#videoLoading {
+    display: none;
+}
+#videoLoading .loading::after {
+    background-color: black;
+}
+.iframe1 {
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.iframe1 iframe {
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+}
+.iframe2 {
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.iframe2 iframe {
+    height: calc(100% + 50px);
+    width: 100%;
+    top: -50px;
+    position: absolute;
+}
+.videoplayback {
+    pointer-events: none;
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.playVideoButtonContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.playVideoButton {
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #FF512F;
+    padding: 0px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.playVideoButton:hover {
+    transform: scale(1.2);
+}
+.addsDuration {
+    position: absolute;
+    bottom: 20px;
+    right: -270px;
+    background-image: linear-gradient(to left,rgba(18,18,18,1) 0%,rgba(0,0,0,0));
+    padding: 15px;
+}
+.premiumVideoShow {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.premiumInfo {
+    color: black;
+    display: flex;
+    width: max-content;
+    font-size: 22px;
+    font-weight: 700;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 30%) 0px 5px 15px;
+    animation: premiumInfo 2s linear infinite;
+}
+@keyframes premiumInfo {
+    0% { 
+        transform: scale(1);
+    }
+    50% { 
+        transform: scale(1.1);
+    }
+    100% { 
+        transform: scale(1);
+    }
+}
+.premiumInfo i {
+    font-size: 26px;
+    padding-left: 20px;
+}
+.inactiveVideoLinkContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inactiveVideoLinkHeader {
+    padding-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+.inactiveVideoLinkButton {
+    width: max-content;
+}
+.videoInfoUserContainer {
+    display: flex;
+    align-items: center;
+}
+.videoInfoUserImage {
+    height: 60px;
+    width: 60px;
+}
+.videoInfoUserImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.videoInfoUser {
+    margin-left: 20px;
+}
+.videoInfoAdded {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+.videoInfoDate {
+    color: rgb(153,153,153);
+    font-weight: 600;
+}
+.videoInfoMoreContainer {
+    text-align: center;
+}
+.videoInfoAdded2 {
+    color: rgb(153,153,153);
+    font-weight: 600;
+    font-size: 15px;
+}
+.videoContainer {
+    padding: 30px;
+}
+#videoContainer {
+    height: 100%;
+    width: 100%;
+}
+.videoInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (min-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1200px) {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+    .videoplayback {
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width : 768px) {
+    .videoplayback {
+        object-fit: contain;
+    }
+    .premiumVideoShow {
+        bottom: 70px;
+    }
+    .topVideoContainer {
+        height: calc(100vh - 85px);
+        min-height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .premiumInfo {
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .premiumInfo i {
+        display: none;
+    }
+    .topVideoContainer {
+        height: calc(100vh - 85px);
+        min-height: auto;
+    }
+    .videoInfoUserImage {
+        height: 45px;
+        width: 45px;
+    }
+    .videoInfoUserImage img {
+        border-radius: 15px;
+    }
+    .videoInfoUser {
+        margin-left: 15px;
+    }
+    .moreHeadlineTitle {
+        font-size: 20px;
+    }
+    .videoInfoAdded {
+        font-size: 16px;
+    }
+    .videoInfoAdded2 {
+        font-size: 12px;
+    }
+    .videoplayback {
+        object-fit: contain;
+    }
+    .premiumVideoShow {
+        bottom: 80px;
+    }
+}

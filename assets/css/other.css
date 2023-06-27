@@ -1,0 +1,129 @@
+.regulaminContainer {
+    width: 60%;
+    margin: auto;
+}
+.regHeadline h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-align: center;
+}
+.regHeadline h2 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #14FFEC;
+}
+.regAllContent {
+    padding: 30px 80px;
+}
+.regPart {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.regPartHeadline {
+    font-size: 18px;
+    font-weight: 600;
+}
+.regPartContentHead {
+    font-size: 18px;
+}
+.regPartContent {
+    font-weight: 200;
+    padding: 10px 0px 0px 20px;
+}
+.regEnd {
+    text-align: end;
+    padding: 20px 20px 0px;
+}
+.kontaktContainer {
+    width: 100%;
+    height: calc(100vh - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kontaktCon {
+    padding: 32px;
+    font-size: 22px;
+    border-radius: 10px;
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid rgb(50, 50, 50, 0.5);
+    transition: 0.3s;
+}
+.kontaktCon:hover {
+    border: 2px solid rgb(50, 50, 50, 0.8);
+}
+.konHeadline {
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.konPart {
+    padding-bottom: 3px;
+    color: #9e9e9e;
+}
+.konTel {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 24px;
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #14FFEC;
+    background-color: rgb(50, 50, 50, 0.2);
+    border-radius: 10px;
+    border: 2px solid rgb(50, 50, 50, 0.5);
+}
+.konTel:hover {
+    background-color: rgb(50, 50, 50, 0.3);
+}
+.otherLink {
+    color: #14FFEC;
+}
+
+@media only screen and (min-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width : 1750px) {
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1200px) {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+
+}
+
+@media only screen and (min-width: 501px) and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+    .regulaminContainer {
+        width: 100%;
+    }
+    .regAllContent {
+        padding: 20px;
+    }
+    .regHeadline h1 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .kontaktCon {
+        padding: 44px 22px;
+    }
+    .konAllContent {
+        font-size: 18px;
+    }
+    .konPart {
+        padding-bottom: 10px;
+    }
+}
